@@ -41,7 +41,7 @@
               href="/#projects"
               v-scroll-to="'#projects'"
               class="text-copy-primary hover:text-green-400"
-              >Projects</a
+              >Interests</a
             >
             <nuxt-link
               v-else
