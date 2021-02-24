@@ -5,7 +5,7 @@
     >
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left" :class="theme">
         <div class="leading-tight">Anza Khalid</div>
-        <div class="flex flex-row items-center mt-1" :class="theme">
+        <div class="flex flex-row items-center mt-1 work" :class="theme">
           <div class="leading-snug text-lg py-4">
             Technical Editor @
           </div>
@@ -33,7 +33,7 @@
       <div
         class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-10 mb-16 relative"
       >
-        <h2 class="font-bold mb-6" id="projects">
+        <h2 class="font-bold mb-6 interest-mobile" id="projects">
           Here are some of my interests:
         </h2>
 
@@ -45,7 +45,7 @@
             <use xlink:href="#dots-triangle" />
           </svg>
         </div>
-           <div class="interests-container"> 
+           <div class="interests-container interest-container-mobile"> 
              <div class="interests product-communications">
                 <h1> Product Communications </h1>
                 <img 
@@ -74,41 +74,6 @@
                 />
              </div>
            </div>
-
-        <!-- <ul class="text-lg sm:text-xl space-y-6">
-          <li class="checkmark">
-            <div>Vue UI Components Library</div>
-            <div class="text-lg text-gray-600">
-              HX library provides a collection of reusable components written in VueJS to
-              build applications, data analytics solutions and user
-              interfaces developed at HX.
-            </div>
-          </li>
-          <li class="checkmark">
-            <div>Accelerator Portal</div>
-            <div class="text-lg text-gray-600">
-              Accelerator is dashboard that provides window into the
-              global insurance markets. Usage includess spotting the trends,
-              study the details and for using sense-check plans.
-            </div>
-          </li>
-          <li class="checkmark">
-            <div>DUAL Healthcare</div>
-            <div class="text-lg text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab
-              nam animi iure nemo exercitationem a, eius non culpa itaque!
-            </div>
-          </li>
-          <li class="checkmark">
-            <div>xTrade - Open Market</div>
-            <div class="text-lg text-gray-600">
-              xTrade digital market platform consists of a number of
-              applications that enable carriers to sell and buyers to obtain
-              risk cover at lower acquisition costs using modern technology to
-              connect buyers to capacity.
-            </div>
-          </li>
-        </ul> -->
       </div>
       <!-- end projects -->
 
@@ -117,7 +82,7 @@
       <div
         class="get-to-know-me container-inner mx-auto text-xl pb-16 relative"
       >
-        <h2 class="font-bold mb-6" id="about">Get to know me:</h2>
+        <h2 class="font-bold mb-6 know-me" id="about">Get to know me:</h2>
 
         <div
           class="absolute left-0"
@@ -142,10 +107,6 @@
             I'm a Technical Editor based in London. I black box complex technical jargon to simpler, easier to understand documentation. A hobbyist photographer who is always up for a good conversation as long as there's orange 🍊 / pineapple 🍍 juice on the table.
           </div>
         </div>
-
-        <!-- <div class="responsive-container">
-          <iframe class="responsive-iframe w-full h-full top-0 left-0 border-0" src="https://www.youtube.com/embed/uHo6o1TNQeE" style="border:0;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div> -->
       </div>
       <!-- end get-to-know me -->
     </div>
@@ -244,7 +205,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .leading-snug {
   color:#6D214F;
 }
@@ -323,4 +284,39 @@ export default {
    font-size: 1.2rem;
    font-weight:400;
  }
+
+@media (max-width: 640px) {
+  .work {
+    margin-left: 20% !important;
+  }
+  
+  .interest-mobile {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .interest-container-mobile {
+    display:flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .product-communications {
+    margin-bottom: 10px;
+  }
+
+  .design {
+    margin-bottom: 10px;
+  }
+
+  .photography {
+    margin-bottom: 10px;
+  }
+
+  .know-me {
+    margin-left: 9%;
+    margin-right: 15%;
+  }
+}
 </style>
