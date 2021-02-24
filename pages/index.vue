@@ -287,7 +287,7 @@ export default {
 
 @media (max-width: 640px) {
   .work {
-    margin-left: 20% !important;
+    margin-left: 23% !important;
   }
   
   .interest-mobile {
